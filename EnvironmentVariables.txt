@@ -1,0 +1,15 @@
+#########################################################################################
+# Lee's Win10 (GSA Jump Server)(e04tcm-icshsv45)
+#########################################################################################
+set APPSETTINGS_DIRECTORY=D:\Users\LTTrent\Dev\Projects\MyProjects\VLTP\MaxGov\AppSettings
+set LOGFILE_DIRECTORY=D:\Users\LTTrent\Dev\Projects\MyProjects\VLTP\MaxGov\Logs
+echo %APPSETTINGS_DIRECTORY%
+echo %LOGFILE_DIRECTORY%
+
+#########################################################################################
+# Lee's Win10 (Citrix Desktop)(DTDv5 - 3)
+#########################################################################################
+set APPSETTINGS_DIRECTORY=E:\Developers\LeeT\Projects\MyProjects\VLTP\AppSettings
+set LOGFILE_DIRECTORY=E:\Developers\LeeT\Projects\MyProjects\VLTP\Logs
+echo %APPSETTINGS_DIRECTORY%
+echo %LOGFILE_DIRECTORY%

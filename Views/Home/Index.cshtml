@@ -1,0 +1,29 @@
+﻿@model VLTP.Models.LoginInfo;
+
+@{
+    ViewData["Title"] = "VLTP";
+}
+
+<h4 class="urs-program-title" style="font-size:1.67rem;">Voluntary Leave Transfer Program:</h4>
+<p class="urs-program-text">Welcome to GSA&#39;s Voluntary Leave Transfer Program&#33; This web application provides the ability for a Government employee who is payrolled by the General Services Administration to donate leave.</p>
+
+@if (Model.LoginPermitted)
+{
+<h4 class="urs-program-title" style="margin-top:1rem;font-size:1.33rem;">You may donate leave to:</h4>
+<ul>
+    <li>An approved employee within your agency or organization.</li>
+    <li>An approved employee in another participating agency or organization.</li>
+    <li>A 'Leave Bank' that was created for a special circumstance such as disaster relief.</li>
+</ul>
+
+<div class="border border-primary text-center mt-3 p-3">
+    <h6 class="text-primary pb-1">Due to compatibility issues, only the use of the Internet Explorer web browser is supported for the VLTP application.</h6>
+    <form asp-controller="Login" asp-action="ExternalLogin" method="post" class="form-horizontal">
+        <button type="submit" class="btn btn-primary" title="Log in using your MAX.gov account">Login</button>
+    </form>
+</div>
+}
+else
+{
+<h3 style="color:red;">@Model.Message</h3>
+}
